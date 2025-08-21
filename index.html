@@ -1272,6 +1272,20 @@
                 padding: 2rem;
             }
         }
+
+        /* تأكيد أن الألوان ثابتة على كل الأجهزة */
+* {
+    -webkit-text-size-adjust: none;  /* يمنع الموبايل من تغيير مقاسات النصوص */
+    -webkit-font-smoothing: antialiased; /* يحافظ على نعومة الخط */
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* نجبر الموبايل يعرض الألوان زي ما هي */
+html, body {
+    background-color: var(--dark-bg) !important;
+    color-scheme: only dark; /* يخلي النظام ما يحاولش يغير الألوان */
+}
+
     </style>
 </head>
 <body>
