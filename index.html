@@ -6,7 +6,6 @@
     <title>Abd El-Rahman Amr - Back-End Developer</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <meta name="color-scheme" content="light only">
     <style>
         :root {
             --primary-color: #6366f1;
@@ -1273,20 +1272,12 @@
                 padding: 2rem;
             }
         }
-
-        /* تأكيد أن الألوان ثابتة على كل الأجهزة */
-* {
-    -webkit-text-size-adjust: none;  /* يمنع الموبايل من تغيير مقاسات النصوص */
-    -webkit-font-smoothing: antialiased; /* يحافظ على نعومة الخط */
-    -webkit-tap-highlight-color: transparent;
+        .stat-number.plus::before {
+  content: "+";
+  margin-right: 4px;   /* مسافة بين + والرقم */
+  color: inherit;      /* نفس لون الرقم */
+  font-weight: bold;
 }
-
-/* نجبر الموبايل يعرض الألوان زي ما هي */
-html, body {
-    background-color: var(--dark-bg) !important;
-    color-scheme: only dark; /* يخلي النظام ما يحاولش يغير الألوان */
-}
-
     </style>
 </head>
 <body>
@@ -1366,7 +1357,7 @@ html, body {
                             <div class="stat-icon">
                                 <i class="fas fa-calendar-alt"></i>
                             </div>
-                            <div class="stat-number">1+</div>
+                            <div class="stat-number plus">+1</div>
                             <div class="stat-label">Years of Experience</div>
                             <div class="stat-description">Active development & learning</div>
                         </div>
@@ -1374,15 +1365,15 @@ html, body {
                             <div class="stat-icon">
                                 <i class="fas fa-certificate"></i>
                             </div>
-                            <div class="stat-number">15+</div>
-                            <div class="stat-label">Certifications</div>
-                            <div class="stat-description">Professional achievements</div>
+                            <div class="stat-number plus">+5</div>
+                            <div class="stat-label">Clients</div>
+                            <div class="stat-description">Served with quality</div>
                         </div>
                         <div class="stat">
                             <div class="stat-icon">
                                 <i class="fas fa-code"></i>
                             </div>
-                            <div class="stat-number">400+</div>
+                            <div class="stat-number plus">+400</div>
                             <div class="stat-label">Training Hours</div>
                             <div class="stat-description">Mastered & actively using</div>
                         </div>
@@ -1390,7 +1381,7 @@ html, body {
                             <div class="stat-icon">
                                 <i class="fas fa-project-diagram"></i>
                             </div>
-                            <div class="stat-number">5+</div>
+                            <div class="stat-number plus">+5</div>
                             <div class="stat-label">Projects</div>
                             <div class="stat-description">Completed successfully</div>
                         </div>
